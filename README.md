@@ -8,4 +8,4 @@ The available data about Pewlett Hackard and the employees was available within 
 
 Each of the connecting lines indicate the relationships between each of the tables and their primary keys (unique identifiers for their dataset). The schema.txt file illustrates the relationship between the tables further and was used as a building block for generating the tables in SQL. Each of the tables from the 
 
-img src="Code_Snips\schema_snip.png" height="400">
+<img src="Code_Snips/schema_snip.png" height="400">
