@@ -10,7 +10,7 @@ Each of the connecting lines indicate the relationships between each of the tabl
 
 A reference of the code created for each table is demonstrated below:
 
-<img src="Code_Snips/schema_snip.png" height="400">
+<img src="Code_Snips/schema_snip.PNG" height="150">
 
 As can be seen from the dept_manager table, each of the data columns from the dept_manager CSV file was specified as well as the foreign keys and primary key. The foreign and primary keys are used to maintain data integrity because they define the relationship the table has with the other tables. 
 
@@ -29,11 +29,11 @@ Although this information is helpful for starting to understand which employees 
 
 Previously, the retirement information was made for all employees born between 1952 and 1955, as well as hired between 1985 and 1988. The condition for the hiring date is not needed since it eliminates employees that are within retiring age (born between 1952 and 1955). A new query was made to return all current employees born between 1952 and 1955 as well as their titles and salaries. The initial query, retiring_employees, included 112,049 results. However, the list contained duplicates due to the issue discussed earlier that employees usually have more than one title throughout their employment. This is demonstrated in the table below which displays some of the duplicates that were returned from the query. As you can see, Aamer Azuma was an engineer in 1989 and then was promoted to a senior engineer in 1995. 
 
-<img src="Code_Snips/duplicates.png" height="400">
+<img src="Code_Snips/duplicates.PNG" height="180">
 
 Therefore, all duplicate employee numbers (emp_no) were eliminated since they are unique to each employee, and only the most recent title of each employee was kept and saved as retiring_employees_count_byTitle. This resulted in 72,458 employees who can potentially retire. The retirement eligible employees have been broken down by title. There are a lot of senior staff and senior engineer positions that will potentially be opening. 
 
-<img src="Code_Snips/retiring_employee_titles.png" height="400">
+<img src="Code_Snips/retiring_employee_titles.PNG" height="200">
 
 To help combat all the potential vacant positions, we suggest initiating a mentorship program where current employees born in 1965 can begin mentoring. Through the mentorship program, the experienced and successful employees can begin stepping back into part-time roles instead of completely retiring. The mentorship eligible employees will take on a new role of mentoring newly hired personnel. This will help to prevent potential gaps in Pewlett Hackard’s structure. The queries made to the database based on mentorship eligibility can be found in Mentorship_Eligibility.slq. There are 1,549 current employees who meet the requirement of being born in 1965. 
 
@@ -41,7 +41,7 @@ Pewlett Hackard is moving in the right direction by investigating retirement eli
 
 This task can be performed like previously performed to look at sales_info:
 
-<img src="Code_Snips/sales_info.png" height="400">
+<img src="Code_Snips/sales_info.PNG" height="100">
 
 Finally, I would suggest reaching out to the HR department. While investigating the titles of each employee, it was observed that even though employees were promoted to higher positions such as senior engineer, the salary did not change with the changing position. This is unusual for a promotion and needs to be investigated since there may be issues with the original dataset. 
 
